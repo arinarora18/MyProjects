@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/add2"
+    android:backgroundTint="#20FFFFFF"
+    android:backgroundTintMode="src_over"
+    >
+
+    <EditText
+        android:id="@+id/todoEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:hint="Enter your todo here"
+        android:textSize="20sp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="4dp"
+        android:padding="16dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Priority"
+            android:textStyle="bold"
+            android:layout_marginBottom="12dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="#000000"
+            android:fontFamily="sans-serif-light"
+            android:layout_gravity="start"
+            android:textSize="23sp"
+            />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:weightSum="3"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            >
+            <RadioButton
+                android:id="@+id/radioButton1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/materialYellow"
+                android:text="Low"
+                android:checked="true"
+                android:theme="@style/WhiteRadioButton"
+                android:textSize="16sp"/>
+            <RadioButton
+                android:id="@+id/radioButton2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/materialOrange"
+                android:text= "Medium"
+                android:theme="@style/WhiteRadioButton"
+                android:textSize="16sp"
+                />
+            <RadioButton
+                android:id="@+id/radioButton3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/materialRed"
+                android:text="High"
+                android:theme="@style/WhiteRadioButton"
+                android:textSize="16sp"
+                />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/addTodoButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Todo"
+            android:background="@color/colorPrimary"
+            android:layout_gravity="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:layout_marginTop="16dp"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>
